@@ -1,0 +1,92 @@
+/* Container for positioning */
+.container {
+    position: relative;
+}
+
+/* Hamburger Menu Button */
+.menu-button {
+    background-color: transparent;  /* Transparent background */
+    border: none;
+    padding: 5px;  /* Reduced padding for a more compact button */
+    border-radius: 50%;  /* Round button */
+    cursor: pointer;
+    position: absolute;  /* Position at top left corner */
+    top: 15px;  /* Spacing from top */
+    left: 15px;  /* Spacing from left */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Enhanced shadow */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+    width: 40px;  /* Fixed width */
+    height: 40px;  /* Fixed height */
+}
+
+/* Icon size and color */
+.menu-button i, .menu-button svg {
+    font-size: 24px;  /* Larger icon size */
+    color: #333;  /* Icon color */
+}
+
+/* Hover effect for the button */
+.menu-button:hover {
+    background-color: #6b5bff;  /* New hover background color */
+}
+
+.menu-button:hover i, .menu-button:hover svg {
+    color: #fff;  /* Change icon color on hover */
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(135deg, #444, #666);  /* Gradient background */
+    color: white;
+    padding-top: 20px;
+    transform: translateX(-100%);  /* Hide sidebar initially */
+    transition: transform 0.3s ease;  /* Smooth transition */
+    z-index: 1000;  /* Ensure sidebar is above other content */
+    border-radius: 0 10px 10px 0;  /* Rounded corners on the right */
+}
+
+.sidebar.open {
+    transform: translateX(0);  /* Show sidebar when open */
+}
+
+/* Sidebar header styles */
+.sidebar-header {
+    font-size: 26px;  /* Increased font size */
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;  /* Make it relative for positioning */
+    cursor: pointer;  /* Pointer cursor for menu text */
+}
+
+/* Sidebar menu styles */
+.sidebar-menu {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar-menu li {
+    padding: 15px 20px;  /* Increased padding for menu items */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth background change and scale effect */
+}
+
+/* Highlight color on hover and scale effect */
+.sidebar-menu li:hover {
+    background-color: #6b5bff;  /* Highlight color on hover */
+    color: white;  /* Text color on hover */
+    transform: scale(1.05);  /* Slightly enlarge on hover */
+}
+
+/* Active state for the menu item */
+.sidebar-menu li.active {
+    background-color: #6b5bff; }

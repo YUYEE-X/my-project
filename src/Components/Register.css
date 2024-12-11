@@ -1,0 +1,88 @@
+/* src/Components/Register.css */
+.register-container {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+}
+
+.register-title {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f1f9ff; /* สีพื้นหลังของ input */
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    border-color: #6c63ff; /* เปลี่ยนสีกรอบเมื่อ focus */
+    outline: none;
+    background-color: #e6f0ff; /* เปลี่ยนสีพื้นหลังเมื่อ focus */
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+}
+
+.input-field::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #5a54e7;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-sm {
+    font-size: 14px;
+    color: #555;
+}
+
+.text-gray-600 {
+    color: #666;
+}
+
+.text-indigo-600 {
+    color: #6c63ff;
+}
+
+.text-indigo-600:hover {
+    text-decoration: underline;
+    color: #5a54e7;
+}
